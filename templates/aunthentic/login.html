@@ -5,18 +5,16 @@
 {% block content %}
 <div class="row d-flex col-4 m-auto">
 
-    <form method="post" action="{% url 'registration-url' %}">
+    <form method="post" action="{% url 'login-url' %}">
         {% csrf_token %}
         <fieldset>
-            <legend class="border-bottom mb-4 mt-4">Register Here</legend>
+            <legend class="border-bottom mb-4 mt-4">Login Here</legend>
             {{ form|crispy }}
         </fieldset>
         <div class="form-group">
-            <input class="btn btn-info mt-4" value="Register" type="submit">
+            <input class="btn btn-info mt-4" value="login" type="submit">
         </div>
 
     </form>
 </div>
-
-    <h1>Register</h1>
 {% endblock %}

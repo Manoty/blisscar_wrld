@@ -15,3 +15,4 @@ def register(request):
 
     return render(request, 'aunthentic/reegister.html', {"form":form})
 
+

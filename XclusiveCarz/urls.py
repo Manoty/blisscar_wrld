@@ -28,7 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', my_views.home, name='home-url'),
     path('auth/', include('authentic.urls')),
-
+    path('Products/', include('Products.urls')),
 
 ]
 
